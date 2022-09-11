@@ -1,0 +1,76 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'global/custom.css' %}" />
+<style type="text/css">
+table.pre, td.pre, th.pre {
+    border: 1px solid black;
+  }
+  
+  table.pre {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th.pre {
+    font-size: 14px /*0.75vw*/;
+    height: 2ex;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+  }
+  
+  td.pre {
+    font-size: 14px /*0.5vw*/;
+    height: 3.5ex;
+    text-align: center;
+  }
+</style>
+{% endblock %}
+
+{% block title %}
+<header><p>{{Constants.header}}</p></header>
+    Instruksi Eksperimen (lanjutan)
+{% endblock %}
+
+{% block content %}
+<p>Beberapa hal yang perlu Anda pahami dalam eksperimen ini yaitu (lanjutan):</p>
+<p><h5><b>h. Pemeriksaan</b></h5></p>
+<p>Pemeriksaan adalah pengujian kepatuhan atas omset yang Anda laporkan dibandingkan dengan omset yang Anda dapatkan dari game huruf random. Pemeriksaan ini dilakukan secara acak dengan probabilitas diperiksa sebesar 20% s.d. 40% untuk masing-masing wajib <b>kontribusi wajib</b> pada setiap pelaporan <b>kontribusi wajib</b>-nya.</p>
+<p>Anda akan mendapat notifikasi hasil pemeriksaan yang berisikan:</p>
+<ul>
+  <li>Status patuh/tidak patuh</li>
+  <li>Jumlah denda jika tidak patuh atau kelebihan <b>kontribusi wajib</b> yang dikembalikan jika terjadi lebih bayar</li>
+  <li>Pembayaran yang dapat Anda terima sebagai hasil dari dilakukannya pemeriksaan</li>
+</ul>
+<br>
+<p>Berikut adalah tangkapan layar dari notifikasi hasil pemeriksaan agar Anda dapat lebih mudah memahami.</p>
+<img src="{% static image_6 %}" width="1024" height="768">
+
+<p>Rincian kondisi hasil pemeriksaan adalah sebagai berikut:</p>
+<table class="table table-bordered">
+  <tr>
+    <th>Kondisi</th><th>Status</th><th>Efek terhadap jumlah pembayaran</th>
+  </tr>
+  <tr>
+    <td>Omset Game = Omset Yang Dilaporkan</td>
+    <td>Patuh</td>
+    <td>Tidak ada tambahan atau pengurangan</td>
+  </tr>
+  <tr>
+    <td>Omset Game > Omset yang dilaporkan</td>
+    <td>Tidak Patuh</td>
+    <td>Mendapat pengurangan berupa denda 200% dari selisih <b>kontribusi wajib</b> yang kurang dibayar</td>
+  </tr>
+  <tr>
+    <td>Omset Game < Omset yang dilaporkan</td>
+    <td>Patuh</td>
+    <td>Mendapat pengembalian atas <b>kontribusi wajib</b> yang lebih dibayar</td>
+  </tr>
+</table>
+
+<br>
+<p>Tekan tombol 'Lanjut' jika Anda sudah memahami instruksi di atas.</p>
+<button class="otree-btn-next btn btn-primary">Lanjut</button>
+
+{% endblock %}

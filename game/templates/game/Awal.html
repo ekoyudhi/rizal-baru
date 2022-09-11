@@ -1,0 +1,18 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'global/custom.css' %}" />
+{% endblock %}
+
+{% block title %}
+<header><p>{{Constants.header}}</p></header>
+    Periode Inti ke-{{round}}
+{% endblock %}
+
+{% block content %}
+
+<p>Tekan tombol 'Mulai' untuk memulai eksperimen.</p> 
+<button class="otree-btn-next btn btn-primary">Mulai</button>
+
+{% endblock %}

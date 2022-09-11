@@ -1,0 +1,43 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'global/custom.css' %}" />
+<style type="text/css">
+table.pre, td.pre, th.pre {
+    border: 1px solid black;
+  }
+  
+  table.pre {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th.pre {
+    font-size: 14px /*0.75vw*/;
+    height: 2ex;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+  }
+  
+  td.pre {
+    font-size: 14px /*0.5vw*/;
+    height: 3.5ex;
+    text-align: center;
+  }
+</style>
+{% endblock %}
+
+{% block title %}
+<header><p>{{Constants.header}}</p></header>
+    Periode latihan ke-{{round}}
+{% endblock %}
+
+{% block content %}
+
+<p>Tekan tombol 'Mulai' untuk memulai eksperimen.
+</p>
+<br>
+<button class="otree-btn-next btn btn-primary">Mulai</button>
+
+{% endblock %}

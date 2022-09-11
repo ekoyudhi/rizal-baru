@@ -1,0 +1,63 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'global/custom.css' %}" />
+<style type="text/css">
+table.pre, td.pre, th.pre {
+    border: 1px solid black;
+  }
+  
+  table.pre {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th.pre {
+    font-size: 14px /*0.75vw*/;
+    height: 2ex;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+  }
+  
+  td.pre {
+    font-size: 14px /*0.5vw*/;
+    height: 3.5ex;
+    text-align: center;
+  }
+</style>
+{% endblock %}
+
+{% block title %}
+<header><p>{{Constants.header}}</p></header>
+    Instruksi Eksperimen (lanjutan)
+{% endblock %}
+
+{% block content %}
+<p><h5><b>2. Contoh Sebuah Periode</b></h5></p>
+<p>Anda akan menghadapi layar sebagai berikut di sebuah periode yang Anda mainkan dengan urutan sebagai berikut:</p>
+<p>1) Dimulai dengan mengerjakan game huruf random seperti penjelasan sebelumnya</p>
+<p>a. Memilih mode waktu</p>
+<img src="{% static image_8 %}" width="1024" height="768"><br><br>
+<p>b. Mengisi jawaban yang benar</p>
+<img src="{% static image_9 %}" width="1024" height="768"><br><br>
+<p>2) Memeriksa dan mencatat hasil pendapatan Anda dari game tersebut</p>
+<img src="{% static image_10 %}" width="1024" height="768"><br><br>
+<p>Tidak ada fitur back page atau kembali ke halaman sebelumnya dalam eksperimen ini sehingga hanya ada satu kesempatan untuk melakukan pencatatan omset. Anda dapat mencatat hasil game effort (omset/biaya/laba) Anda untuk periode ini menggunakan alat tulis yang sudah Anda siapkan sebelum meng-klik tombol lanjut.</p>
+<p>3) Melaporkan <b>kontribusi wajib</b> penghasilan Anda</p>
+<img src="{% static image_11 %}" width="1024" height="768"><br><br>
+<p>4)	Memastikan bahwa Anda sudah yakin dengan nilai omset yang Anda laporkan</p>
+<img src="{% static image_11_2 %}" width="1024" height="768"><br><br>
+<p>Jika Anda memilih “Ya” maka lanjut ke proses angka 5, jika memilih “Tidak” maka akan kembali ke proses angka 3</p>
+<p>5) Setelah menekan tombol lanjut Anda akan mendapat bukti pelaporan dengan tampilan sebagai berikut:</p>
+<img src="{% static image_12 %}" width="1024" height="768"><br><br>
+<p>6) Akan muncul notifikasi jika periode pelaporan Anda saat ini masuk dalam periode yang diperiksa sebagaimana penjelasan sebelumnya</p>
+<img src="{% static image_13 %}" width="1024" height="768"><br><br>
+<p>Rangkaian nomor 1 sampe dengan 6 adalah satu periode dan akan Anda lakukan sebanyak 3 Periode Latihan + 15 Periode Game inti.</p>
+<p>Setelah selesai semua periode maka akan dilanjutkan dengan kuesioner singkat dan input angka random untuk pencairan pendapatan dalam rupiah.</p>
+
+<br>
+<p>Tekan tombol 'Lanjut' jika Anda sudah memahami instruksi di atas.</p>
+<button class="otree-btn-next btn btn-primary">Lanjut</button>
+
+{% endblock %}
