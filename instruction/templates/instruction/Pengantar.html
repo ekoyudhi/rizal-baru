@@ -12,23 +12,23 @@
 
 {% block content %}
     <p><h5><b>Baca dan pahami cerita berikut untuk menjawab pertanyaan selanjutnya</b></h5></p>
-    <p>Info Umum</p>
-	<p>Anda adalah warga desa <b>Nusa Makmur</b> yang memiliki usaha/pekerjaan dengan memanfaatkan sumber daya yang ada di desa tersebut. Pemerintah desa Nusa Makmur <b>mewajibkan setiap warga desa yang memiliki usaha/pekerjaan untuk mencatat, membayar, dan melaporkan kontribusi wajib</b> ke desa. <b>Kontribusi wajib</b> tersebut akan <b>digunakan untuk membiayai kebutuhan desa Nusa Makmur</b> yang akan digunakan untuk kelancaran usaha Anda.</p>
-    <p>Pemerintah desa Nusa makmur menetapkan <b>perhitungan <b>kontribusi wajib</b></b> dengan cara yaitu:
+    
+	<p>Anda adalah warga desa <b>Nusa Makmur</b> sudah tinggal dan dibesarkan di desa tersebut sejak lahir. Saat ini Anda bekerja sebagai pengusaha di desa tersebut. Usaha Anda saat ini tergolong dalam Usaha Mikro Kecil dan Menengah (UMKM). Pemerintah desa Nusa Makmur <b>mewajibkan setiap pengusaha baik pengusaha UMKM maupun pengusaha Besar di Nusa Makmur untuk mencatat, membayar, dan melaporkan iuran wajib</b>. <b>Iuran wajib</b> tersebut akan <b>digunakan untuk membiayai kebutuhan dan fasilitas umum desa Nusa Makmur</b>.</p>
+    <p>Pemerintah desa Nusa makmur menetapkan <b>perhitungan <b>iuran wajib</b></b> dengan cara yaitu:
         <ul>
-            <li>tarif dikalikan <b>dengan omset (bukan dari laba) sebagai dasar pengenaan <b>kontribusi wajib</b></b>.
+            <li>tarif dikalikan <b>dengan omset (bukan dari laba) sebagai dasar pengenaan <b>iuran wajib</b></b>.
             </li>
             <li>Tarif ini telah <b>diturunkan dari 20% ke 10%</b>.
             </li>
         </ul>
     </p>
     <p>
-        Untuk saat ini, Anda sebagai warga desa Nusa Makmur akan <b>mencatat, membayar</b> dan <b>melaporkan kontribusi wajib</b> dalam <b>15 periode</b>.
+        Anda selaku pengusaha di desa Nusa Makmur diwajibkan untuk <b>mencatat, membayar</b> dan <b>melaporkan iuran wajib</b> dalam <b>15 periode</b>.
     </p>
     <p>
-        Sebagai bentuk <b>pengawasan atas pembayaran dan pelaporan kontribusi wajib ke desa</b> maka pemerintah desa Nusa Makmur diwajibkan melaksanakan pemeriksaan <b>kontribusi wajib</b> terhadap warga desa Nusa Makmur di akhir periode pembayaran dan pelaporan. Pemeriksaan ini dilakukan secara acak dengan probabilitas diperiksa sebesar <b>20% s.d. 40% </b>untuk masing-masing warga pada setiap pelaporan <b>kontribusi wajib</b>-nya.
+        Sebagai bentuk <b>pengawasan atas pembayaran dan pelaporan iuran wajib ke desa</b> maka pemerintah desa Nusa Makmur melaksanakan pemeriksaan terhadap pengusaha desa Nusa Makmur pada akhir periode pembayaran dan pelaporan. Pemeriksaan ini dilakukan secara acak dengan probabilitas diperiksa sebesar <b>20%</b>untuk masing-masing pengusaha pada setiap periode pelaporan.
     </p>
-	<p>Atas pemeriksaan yang dilakukan, jika terdapat <b>ketidakpatuhan pembayaran kontribusi wajib</b> atau dalam hal ini <b>omset yang dilaporkan tidak sesuai dengan omset yang sebenarnya</b> maka pemerintah desa Nusa Makmur akan menetapkan denda sebesar <b>200% dari selisih kontribusi wajib yang kurang dibayar</b>.
+	<p>Atas pemeriksaan yang dilakukan, jika terdapat <b>ketidakpatuhan pembayaran kontribusi wajib</b> atau dalam hal ini <b>omset yang dilaporkan tidak sesuai dengan omset yang sebenarnya</b> maka pemerintah desa Nusa Makmur akan menetapkan denda sebesar <b>200% dari selisih iuran wajib yang kurang dibayar</b>.
     </p>
     <p>
         Isilah pertanyaan berikut terkait dengan informasi di atas dengan benar untuk dapat melanjutkan ke tahap berikutnya
@@ -43,6 +43,16 @@
     {{formfield 'q7'}}
     {{formfield 'q8'}}
     {{formfield 'q9'}}
+    {{formfield 'q10'}}
+    {{formfield 'q11'}}
+    <p>Perhatikan cerita berikut yang akan digunakan untuk menjawab pertanyaan nomor 12 s.d 15</p>
+    <div class="alert alert-danger" role="alert">
+        Pada periode ini, Anda sudah melakukan yang terbaik pada usaha UMKM Anda untuk mendapatkan omset maksimal namun Anda hanya dapat memperoleh omset sebesar 100juta. Biaya yang dibutuhkan untuk memperoleh omset ini adalah 45% dari omset yaitu sebesar 45juta sehingga Anda mendapatkan laba sebesar 55juta.
+    </div>
+    {{formfield 'q12'}}
+    {{formfield 'q13'}}
+    {{formfield 'q14'}}
+    {{formfield 'q15'}}
     <br>
     <p>Tekan tombol 'Lanjut' jika Anda sudah selesai menjawab semua pertanyaan.</p>
     <button class="otree-btn-next btn btn-primary">Lanjut</button>

@@ -31,7 +31,7 @@ class Awal(Page):
             #             if len(r_list) == x:
             #                 loop = False
             for n in range(1, Constants.num_rounds+1):
-                rnd = random.randint(20,40)
+                rnd = random.randint(20,20)
                 rnd1 = random.randint(1,100)
                 if rnd1 <= rnd:
                     r_list.append(n)

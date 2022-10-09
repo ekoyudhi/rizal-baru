@@ -75,10 +75,10 @@ class Pengantar(Page):
         return self.round_number == 1
     
     form_model = 'player'
-    form_fields = ['q1','q2','q3','q4','q5','q6','q7','q8','q9']
+    form_fields = ['q1','q2','q3','q4','q5','q6','q7','q8','q9','q10','q11','q12','q13','q14','q15']
 
     def error_message(player, values):
-        solutions = dict(q1=2,q2=4,q3=1,q4=2,q5=4,q6=2,q7=4,q8=2,q9=3)
+        solutions = dict(q1=2,q2=3,q3=1,q4=4,q5=1,q6=2,q7=4,q8=2,q9=4,q10=2,q11=3,q12=3,q13=2,q14=3,q15=1)
         error_messages= dict()
         for field_name in solutions:
             if values[field_name] != solutions[field_name]:
