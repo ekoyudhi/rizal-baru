@@ -30,14 +30,14 @@ table.lap, td.lap, th.lap {
 {% endblock %}
 {% block title %}
 <header><p>{{Constants.header}}</p></header>
-Pelaporan Kontribusi Wajib
+Pelaporan Iuran Wajib
 {% endblock %}
 
 {% block content %}
 <h5>Periode Inti ke-{{round}}</h5>
 <br>
 <p>
-  Dari penghasilan yang Anda dapatkan dari game sebelumnya Anda diharapkan melaporkan konstribusi wajib dengan form berikut.</p>
+  Dari penghasilan yang Anda dapatkan dari game sebelumnya Anda diharapkan melaporkan iuran wajib dengan form berikut.</p>
   <p>Hanya field omset yang perlu Anda isi, untuk field lain akan terisi secara otomatis
 </p>
 <br>
@@ -45,11 +45,11 @@ Pelaporan Kontribusi Wajib
 
 <table class="lap">
     <tr><td class="lap">
-    <h5>Pelaporan Kontribusi Wajib</h5>
+    <h5>Pelaporan Iuran Wajib</h5>
     <br>
     <input type="hidden" id="omset_input" name="omset_input" />
     Omset&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;: <input type="text" style="text-align: right;" id="txt_omset_input" name="txt_omset_input" /> EU<br><br>
-    Jumlah konstribusi wajib yang terutang &nbsp;&nbsp;&nbsp;: <input type="text" style="text-align: right;" id="pph" name="pph" disabled /> EU
+    Jumlah iuran wajib &nbsp;&nbsp;&nbsp;: <input type="text" style="text-align: right;" id="pph" name="pph" disabled /> EU
     <br>
     </td></tr>
 </table>
@@ -57,7 +57,7 @@ Pelaporan Kontribusi Wajib
 <input type="hidden" id="payoff_awal" name="payoff_awal" />
 <p>Jumlah pendapatan bersih/pembayaran yang mungkin bisa Anda dapatkan pada periode ini : <input type="text" style="text-align: right;" id="txt_payoff_awal" name="txt_payoff_awal" disabled /> EU</p>
 <br>
-<p>Pastikan kembali bahwa pengisian pelaporan konstribusi wajib benar-benar sesuai dengan keputusan Anda. </p>
+<p>Pastikan kembali bahwa pengisian pelaporan iuran wajib benar-benar sesuai dengan keputusan Anda. </p>
 <br>
 <p>Tekan tombol 'Lanjut' jika Anda sudah yakin dengan isian pelaporan Anda</p>
 
@@ -75,7 +75,7 @@ Pelaporan Kontribusi Wajib
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-        Apakah Anda sudah yakin dengan pelaporan konstribusi wajib Anda?<br>
+        Apakah Anda sudah yakin dengan pelaporan Anda?<br>
         Setelah memilih "Ya" maka Anda tidak dapat melakukan perubahan data.
       </div>
       <div class="modal-footer">

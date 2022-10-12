@@ -34,10 +34,19 @@ table.pre, td.pre, th.pre {
 {% endblock %}
 
 {% block content %}
-
-<p>Tekan tombol 'Mulai' untuk memulai eksperimen.
+<div id="jeda"></div>
+<p id=""ket>Tekan tombol 'Mulai' untuk memulai eksperimen.
 </p>
 <br>
 <button class="otree-btn-next btn btn-primary">Mulai</button>
-
+<script>
+  var round = {{round}};
+  if (round != 1) {
+      document.getElementById("jeda").innerHTML = "<p>Sebelum menekan tombol 'Lanjut' untuk melanjutkan eskperimen,</p><p>Anda dapat menjeda dan istirahat di halaman ini.</p><p>Tidak perlu terburu-buru, pastikan Anda mengambil keputusan dengan optimal.</p><br><br><br><br>";
+      document.getElementById("ket").innerHTML = "Tekan tombol 'Lanjut' untuk memulai melanjutkan eksperimen";
+  } else {
+      document.getElementById("jeda").innerHTML = "";
+      document.getElementById("ket").innerHTML = "Tekan tombol 'Mulai' untuk memulai eksperimen.";
+  }
+</script>
 {% endblock %}
