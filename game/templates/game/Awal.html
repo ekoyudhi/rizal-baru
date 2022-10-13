@@ -13,15 +13,17 @@
 {% block content %}
 <div id="jeda"></div>
 <p id="ket">Tekan tombol 'Mulai' untuk memulai eksperimen.</p> 
-<button class="otree-btn-next btn btn-primary">Mulai</button>
+<button id="btn-next" class="otree-btn-next btn btn-primary">Mulai</button>
 <script>
     var round = {{round}};
     if (round != 1) {
         document.getElementById("jeda").innerHTML = "<p>Sebelum menekan tombol 'Lanjut' untuk melanjutkan eskperimen,</p><p>Anda dapat menjeda dan istirahat di halaman ini.</p><p>Tidak perlu terburu-buru, pastikan Anda mengambil keputusan dengan optimal.</p><br><br><br><br>";
         document.getElementById("ket").innerHTML = "Tekan tombol 'Lanjut' untuk memulai melanjutkan eksperimen";
+        document.getElementById("btn-next").textContent = "Lanjut"
     } else {
         document.getElementById("jeda").innerHTML = "";
         document.getElementById("ket").innerHTML = "Tekan tombol 'Mulai' untuk memulai eksperimen.";
+        document.getElementById("btn-next").textContent = "Mulai"
     }
 </script>
 {% endblock %}
