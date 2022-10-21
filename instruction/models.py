@@ -47,7 +47,7 @@ class Player(BasePlayer):
     q1 = models.IntegerField(choices=[[1,'Nusa Jaya'],[2,'Nusa Makmur']], label='1) Anda adalah warga desa?')
     q2 = models.IntegerField(choices=[[1,'Karyawan'],[2,'Kepala Desa'],[3,'Pengusaha']], label='2)	Apa pekerjaan Anda di desa tersebut?')
     q3 = models.IntegerField(choices=[[1,'Usaha Mikro Kecil dan Menengah (UMKM)'],[2,'Usaha Besar']], label='3)	Skala kategori besar usaha Anda di desa tersebut adalah')
-    q4 = models.IntegerField(choices=[[1,'Mencatat dan membayar iuran wajib'],[2,'Membayar dan melaporkan iuran wajib'],[3,'Mencatat dan membayar iuran wajib'],[4,'Mencatat, membayar, dan melaporkan iuran wajib']], label='4)	Kewajiban Anda sebagai pengusaha UMKM di  desa Nusa Makmur adalah?')
+    q4 = models.IntegerField(choices=[[1,'Mencatat dan membayar iuran wajib'],[2,'Membayar dan melaporkan iuran wajib'],[3,'Mencatat dan melaporkan iuran wajib'],[4,'Mencatat, membayar, dan melaporkan iuran wajib']], label='4)	Kewajiban Anda sebagai pengusaha UMKM di desa Nusa Makmur adalah?')
     q5 = models.IntegerField(choices=[[1,'15 Periode'],[2,'12 Periode']], label='5)Anda harus melaporkan iuran  wajib dalam berapa periode?')
     q6 = models.IntegerField(choices=[[1,'Laba (Rugi)'],[2,'Omset']], label='6) Besarnya pembayaran iuran wajib dihitung dari? (Dasar pengenaan iuran wajib)')
     q7 = models.IntegerField(choices=[[1,'Tidak ada'],[2,'Ada, dari 20% ke 10% dari Laba'],[3,'Ada, dari 10% ke 5% dari Laba'],[4,'Ada, dari 20% ke 10% dari Omset']], label='7) Apakah ada penurunan tarif, berapa besarannya?')
