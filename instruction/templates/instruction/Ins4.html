@@ -1,0 +1,56 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'global/custom.css' %}" />
+<style type="text/css">
+table.pre, td.pre, th.pre {
+    border: 1px solid black;
+  }
+  
+  table.pre {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th.pre {
+    font-size: 14px /*0.75vw*/;
+    height: 2ex;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+  }
+  
+  td.pre {
+    font-size: 14px /*0.5vw*/;
+    height: 3.5ex;
+    text-align: center;
+  }
+</style>
+{% endblock %}
+
+{% block title %}
+<header><p>{{Constants.header}}</p></header>
+    Instruksi Eksperimen (lanjutan)
+{% endblock %}
+
+{% block content %}
+<p><h5><b>D. Pelaporan iuran wajib</b></h5></p>
+<p>Dari omset yang Anda dapatkan dari game huruf random pada tahap sebelumnya, selanjutnya Anda akan melaporkannya dalam form berikut.</p>
+<p>Untuk memudahkan, hanya field omset yang perlu Anda isi, untuk field lain akan terisi <b>secara otomatis.</b></p>
+<p>Berikut adalah tangkapan layar dari penelitian agar Anda dapat lebih mudah memahami.</p>
+<img src="{% static image_5%}" width="1024" height="768">
+
+<p>Fungsi tombol:</p>
+<ul>
+  <li>Jumlah <b>iuran wajib</b> terutang dimunculkan sesuai omset yang Anda masukkan dalam kolom omset dengan penghitungan <b>15%</b> dikali omset yang dilaporkan</li>
+  <li>Jumlah pendapatan bersih/pembayaran yang mungkin didapat adalah jumlah pembayaran yang mungkin bisa Anda dapatkan sesuai data pelaporan <b>iuran wajib</b> yang Anda sampaikan dengan penghitungan Laba dikurangi <b>iuran wajib</b> dilaporkan</li>
+</ul>
+<br>
+<p>Misalkan Anda melaporkan omset sebesar 50.000.000 maka jumlah iuran wajib yang dipotong dari Laba Anda sebesar 15%x30.000.000 yaitu 4.500.000</p>
+<p>Setiap keputusan Anda dalam melaporkan omset akan mempengaruhi jumlah pembayaran yang mungkin bisa Anda dapatkan sehingga Anda harus memahaminya dengan baik.</p>
+
+<br>
+<p>Tekan tombol 'Lanjut' jika Anda sudah memahami instruksi di atas.</p>
+<button class="otree-btn-next btn btn-primary">Lanjut</button>
+
+{% endblock %}

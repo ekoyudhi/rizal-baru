@@ -27,7 +27,7 @@ class Constants(BaseConstants):
 
     use_timeout = True
     seconds_per_period = 60
-    tarif_pajak = 0.1
+    tarif_pajak = 0.15
     header = "Kontak Peneliti (Rizal) <a href='http://wa.me/628569041762' target='_blank'>http://wa.me/628569041762</a>"
 
 class Subsession(BaseSubsession):

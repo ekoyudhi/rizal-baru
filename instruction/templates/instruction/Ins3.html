@@ -1,0 +1,54 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'global/custom.css' %}" />
+<style type="text/css">
+table.pre, td.pre, th.pre {
+    border: 1px solid black;
+  }
+  
+  table.pre {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th.pre {
+    font-size: 14px /*0.75vw*/;
+    height: 2ex;
+    text-align: center;
+    background-color: rgb(200, 200, 200);
+  }
+  
+  td.pre {
+    font-size: 14px /*0.5vw*/;
+    height: 3.5ex;
+    text-align: center;
+  }
+</style>
+{% endblock %}
+
+{% block title %}
+<header><p>{{Constants.header}}</p></header>
+    Instruksi Eksperimen (lanjutan)
+{% endblock %}
+
+{% block content %}
+<p><h5><b>C. Penghitungan Iuran Wajib</b></h5></p>
+<p>Perhatikan dan pahami cerita berikut ini:</p>
+<p>Misalkan pada periode ini, dengan usaha yang Anda lakukan dengan game huruf random, Anda memperoleh:</p>
+<ol>
+  <li>omset sebesar 100juta</li>
+  <li>Biaya yang dibutuhkan untuk memperoleh omset ini adalah 45% dari omset yaitu sebesar 45juta</li>
+  <li>sehingga Anda mendapatkan laba sebesar 55juta.</li>
+</ol>
+<p>Pilih Jawaban yang benar</p>
+{{formfield 'q12'}}
+{{formfield 'q13'}}
+{{formfield 'q14'}}
+{{formfield 'q15'}}
+<br>
+<p>Tekan tombol 'Lanjut' jika Anda sudah selesai menjawab semua pertanyaan.</p>
+<button class="otree-btn-next btn btn-primary">Lanjut</button>
+
+{% endblock %}

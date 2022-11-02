@@ -2,11 +2,22 @@ from otree.api import Currency as c, currency_range
 from ._builtin import Page
 from .models import Constants
 
-class Instruksi1(Page):
+class Ins1(Page):
     def is_displayed(self):
         return self.round_number == 1
+    
+    form_model = 'player'
+    form_fields = ['q1','q2','q3','q4','q5','q6','q7','q8','q9','q10','q11']
 
-class Instruksi2(Page):
+    def error_message(player, values):
+        solutions = dict(q1=2,q2=3,q3=1,q4=4,q5=2,q6=4,q7=2,q8=2,q9=4,q10=2,q11=3)
+        error_messages= dict()
+        for field_name in solutions:
+            if values[field_name] != solutions[field_name]:
+                error_messages[field_name] = 'Jawaban Salah'
+        return error_messages
+
+class Ins2(Page):
     def is_displayed(self):
         return self.round_number == 1
     
@@ -17,8 +28,34 @@ class Instruksi2(Page):
             'image_3': 'images/image_3.jpg',
             'image_4': 'images/image_4.jpg',
         }
+    
+    form_model = 'player'
+    form_fields = ['q11a','q11b']
 
-class Instruksi3(Page):
+    def error_message(player, values):
+        solutions = dict(q11a=3,q11b=2)
+        error_messages= dict()
+        for field_name in solutions:
+            if values[field_name] != solutions[field_name]:
+                error_messages[field_name] = 'Jawaban Salah'
+        return error_messages
+
+class Ins3(Page):
+    def is_displayed(self):
+        return self.round_number == 1
+    
+    form_model = 'player'
+    form_fields = ['q12','q13','q14','q15']
+
+    def error_message(player, values):
+        solutions = dict(q12=3,q13=2,q14=3,q15=1)
+        error_messages= dict()
+        for field_name in solutions:
+            if values[field_name] != solutions[field_name]:
+                error_messages[field_name] = 'Jawaban Salah'
+        return error_messages
+
+class Ins4(Page):
     def is_displayed(self):
         return self.round_number == 1
     
@@ -27,40 +64,16 @@ class Instruksi3(Page):
             'image_5': 'images/image_5.jpg'
         }
 
-class Instruksi4(Page):
+class Ins5(Page):
     def is_displayed(self):
         return self.round_number == 1
-    
-    def vars_for_template(self):
-        return {
-            'image_6': 'images/image_6.jpg'
-        }
 
-class Instruksi5(Page):
-    def is_displayed(self):
-        return self.round_number == 1
-    
     def vars_for_template(self):
         return {
             'image_7': 'images/image_7.jpg'
         }
 
-class Instruksi6(Page):
-    def is_displayed(self):
-        return self.round_number == 1
-    
-    def vars_for_template(self):
-        return {
-            'image_8': 'images/image_8.jpg',
-            'image_9': 'images/image_9.jpg',
-            'image_10': 'images/image_10.jpg',
-            'image_11': 'images/image_11.jpg',
-            'image_11_2': 'images/image_11_2.jpg',
-            'image_12': 'images/image_12.jpg',
-            'image_13': 'images/image_13.jpg',
-        }
-
-class Instruksi7(Page):
+class Ins6(Page):
     def is_displayed(self):
         return self.round_number == 1
     
@@ -69,21 +82,88 @@ class Instruksi7(Page):
             'instruksi': 'files/instruksi.pdf'
         }
 
-class Pengantar(Page):
-    #pass
-    def is_displayed(self):
-        return self.round_number == 1
-    
-    form_model = 'player'
-    form_fields = ['q1','q2','q3','q4','q5','q6','q7','q8','q9','q10','q11','q12','q13','q14','q15']
+# class Instruksi1(Page):
+#     def is_displayed(self):
+#         return self.round_number == 1
 
-    def error_message(player, values):
-        solutions = dict(q1=2,q2=3,q3=1,q4=4,q5=1,q6=2,q7=4,q8=2,q9=4,q10=2,q11=3,q12=3,q13=2,q14=3,q15=1)
-        error_messages= dict()
-        for field_name in solutions:
-            if values[field_name] != solutions[field_name]:
-                error_messages[field_name] = 'Jawaban Salah'
-        return error_messages
+# class Instruksi2(Page):
+#     def is_displayed(self):
+#         return self.round_number == 1
+    
+#     def vars_for_template(self):
+#         return {
+#             'image_1': 'images/image_1.jpg',
+#             'image_2': 'images/image_2.jpg',
+#             'image_3': 'images/image_3.jpg',
+#             'image_4': 'images/image_4.jpg',
+#         }
+
+# class Instruksi3(Page):
+#     def is_displayed(self):
+#         return self.round_number == 1
+    
+#     def vars_for_template(self):
+#         return {
+#             'image_5': 'images/image_5.jpg'
+#         }
+
+# class Instruksi4(Page):
+#     def is_displayed(self):
+#         return self.round_number == 1
+    
+#     def vars_for_template(self):
+#         return {
+#             'image_6': 'images/image_6.jpg'
+#         }
+
+# class Instruksi5(Page):
+#     def is_displayed(self):
+#         return self.round_number == 1
+    
+#     def vars_for_template(self):
+#         return {
+#             'image_7': 'images/image_7.jpg'
+#         }
+
+# class Instruksi6(Page):
+#     def is_displayed(self):
+#         return self.round_number == 1
+    
+#     def vars_for_template(self):
+#         return {
+#             'image_8': 'images/image_8.jpg',
+#             'image_9': 'images/image_9.jpg',
+#             'image_10': 'images/image_10.jpg',
+#             'image_11': 'images/image_11.jpg',
+#             'image_11_2': 'images/image_11_2.jpg',
+#             'image_12': 'images/image_12.jpg',
+#             'image_13': 'images/image_13.jpg',
+#         }
+
+# class Instruksi7(Page):
+#     def is_displayed(self):
+#         return self.round_number == 1
+    
+#     def vars_for_template(self):
+#         return {
+#             'instruksi': 'files/instruksi.pdf'
+#         }
+
+# class Pengantar(Page):
+#     #pass
+#     def is_displayed(self):
+#         return self.round_number == 1
+    
+#     form_model = 'player'
+#     form_fields = ['q1','q2','q3','q4','q5','q6','q7','q8','q9','q10','q11','q12','q13','q14','q15']
+
+#     def error_message(player, values):
+#         solutions = dict(q1=2,q2=3,q3=1,q4=4,q5=1,q6=2,q7=4,q8=2,q9=4,q10=2,q11=3,q12=3,q13=2,q14=3,q15=1)
+#         error_messages= dict()
+#         for field_name in solutions:
+#             if values[field_name] != solutions[field_name]:
+#                 error_messages[field_name] = 'Jawaban Salah'
+#         return error_messages
 
 class Persiapan(Page):
     def vars_for_template(self):
@@ -178,14 +258,12 @@ class Tandaterima(Page):
                 'pph':pph}
 
 
-page_sequence = [Instruksi1, 
-                Instruksi2, 
-                Instruksi3, 
-                Instruksi4, 
-                Instruksi5, 
-                Instruksi6,
-                Instruksi7,
-                Pengantar, 
+page_sequence = [Ins1, 
+                Ins2, 
+                Ins3, 
+                Ins4, 
+                Ins5, 
+                Ins6,
                 Persiapan, 
                 Pilihwaktu, 
                 Task, 

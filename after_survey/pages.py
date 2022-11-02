@@ -13,7 +13,7 @@ class Kuesioner2(Page):
 
 class Survey(Page):
     form_model = 'player'
-    form_fields = ['s1','s2','s3','s4','s5','s6','s7','s8','s9','s10','s11','s12','s13']
+    form_fields = ['s1','s2','s3','s4','s5','s6','s7','s8','s9','s10','s11','s12','s13','s14']
 
     def vars_for_template(self):
         treatment = self.session.config['treatment']
@@ -21,7 +21,7 @@ class Survey(Page):
 
 class Survey2(Page):
     form_model = 'player'
-    form_fields = ['t11','t12','t13','t14','t15','t16','t17','t18','t19','t20','t21']
+    form_fields = ['t11','t12','t13','t14','t15','t16','t17','t18','t19','t20','t21','t22','t23']
 
 class Ambilpay(Page):
     form_model = 'player'

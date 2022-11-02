@@ -22,22 +22,23 @@ Kuesioner
 {{ formfield 's8' }}
 {% endif %}
 {{ formfield 's9' }}
-{{formfield 's10'}}
-{{formfield 's11'}}
-{{formfield 's12'}}
-{{formfield 's13'}}
+{{ formfield 's10' }}
+{{ formfield 's11' }}
+{{ formfield 's12' }}
+{{ formfield 's13' }}
+{{ formfield 's14' }}
 <br><br>
 <p>Tekan tombol 'Lanjut' untuk masuk ke halaman berikutnya.</p>
 <button class="otree-btn-next btn btn-primary">Lanjut</button>
 <script lang="text/javascript">
-    $('#id_s11').on('change', function(){
+    $('#id_s12').on('change', function(){
         const selectedPackage = $('#id_s3').val();
         if (selectedPackage == 1) {
-            $('#id_s12').attr('disabled', 'disabled');
-            $('#id_s13').removeAttr("disabled");
-        } else {
-            $('#id_s12').removeAttr("disabled");
             $('#id_s13').attr('disabled', 'disabled');
+            $('#id_s14').removeAttr("disabled");
+        } else {
+            $('#id_s13').removeAttr("disabled");
+            $('#id_s14').attr('disabled', 'disabled');
         }
     });
     $('#id_s1').on('change', function(){

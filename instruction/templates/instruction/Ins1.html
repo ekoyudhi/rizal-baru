@@ -1,0 +1,53 @@
+{% extends "global/Page.html" %}
+{% load otree static %}
+
+{% block styles %}
+<link rel="stylesheet" href="{% static 'global/custom.css' %}" />
+{% endblock %}
+
+{% block title %}
+<header><p>{{Constants.header}}</p></header>
+Instruksi Eksperimen
+{% endblock %}
+
+{% block content %}
+    <p><h5><b>Ingat! Anda tidak dapat menggunakan fitur back page atau kembali ke halaman sebelumnya dalam eksperimen ini.</b></h5></p>
+    <p>Maka dari itu, mohon pastikan Anda membaca dan memahami dengan seksama seluruh instruksi yang ada pada setiap halaman dan menjawab pertanyaan dengan benar sebelum melanjutkan ke halaman berikutnya sehingga Anda dapat memahami apa yang harus Anda lakukan di dalam eksperimen ini.</p>
+    <p><h5><b>A. Pengantar</b></h5></p>
+	<p>Dalam eksperimen ini, Anda berperan menjadi warga desa <b>Nusa Makmur</b> yang sudah tinggal dan dibesarkan di desa tersebut sejak lahir. Saat ini Anda bekerja sebagai pengusaha di desa tersebut. Usaha Anda saat ini tergolong dalam Usaha Mikro Kecil dan Menengah (UMKM). Pemerintah desa Nusa Makmur <b>mewajibkan setiap pengusaha, baik pengusaha UMKM maupun pengusaha Besar di Nusa Makmur untuk mencatat, membayar, dan melaporkan iuran wajib</b>. <b>Iuran wajib</b> tersebut akan <b>digunakan untuk membiayai kebutuhan dan fasilitas umum desa Nusa Makmur</b>.</p>
+    <p>Nusa makmur menetapkan <b>perhitungan iuran wajib</b> dengan cara yaitu:
+        <ul>
+            <li>Tarif dikalikan <b>dengan omset usaha (bukan dari laba) sebagai dasar pengenaan iuran wajib</b>.
+            </li>
+            <li>Tarif ini telah <b>diturunkan dari 20% ke 15%</b>.
+            </li>
+        </ul>
+    </p>
+    <p>
+        Anda selaku pengusaha di desa Nusa Makmur diwajibkan untuk <b>mencatat, membayar</b> dan <b>melaporkan iuran wajib</b> dalam <b>15 periode</b>.
+    </p>
+    <p>
+        Sebagai bentuk <b>pengawasan atas pembayaran dan pelaporan iuran wajib ke desa</b> maka pemerintah desa Nusa Makmur melaksanakan pemeriksaan terhadap pengusaha desa Nusa Makmur pada akhir periode pembayaran dan pelaporan. Pemeriksaan ini dilakukan secara acak dengan probabilitas diperiksa sebesar <b>20%</b>untuk masing-masing pengusaha pada setiap periode pelaporan.
+    </p>
+	<p>Atas pemeriksaan yang dilakukan, jika terdapat ketidaksesuaian antara omset usaha dengan omset yang dilaporkan dalam hal ini <b>omset yang dilaporkan lebih rendah daripada omset usaha yang sebenarnya</b> maka pemerintah desa Nusa Makmur akan menetapkan denda sebesar <b>200% dari selisih iuran wajib yang masih kurang dibayar (yaitu: iuran wajib yang sebenarnya dikurangi dengan iuran wajib yang dilaporkan)</b>.
+    </p>
+    <p>
+        Isilah pertanyaan berikut terkait dengan informasi di atas dengan benar untuk dapat melanjutkan ke tahap berikutnya
+        <br>Pilih jawaban yang <b>benar</b>
+    </p>
+    {{formfield 'q1'}}
+    {{formfield 'q2'}}
+    {{formfield 'q3'}}
+    {{formfield 'q4'}}
+    {{formfield 'q5'}}
+    {{formfield 'q6'}}
+    {{formfield 'q7'}}
+    {{formfield 'q8'}}
+    {{formfield 'q9'}}
+    {{formfield 'q10'}}
+    {{formfield 'q11'}}
+    <br>
+    <p>Tekan tombol 'Lanjut' jika Anda sudah selesai menjawab semua pertanyaan.</p>
+    <button class="otree-btn-next btn btn-primary">Lanjut</button>
+
+{% endblock %}
