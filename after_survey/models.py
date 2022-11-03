@@ -40,7 +40,7 @@ class Player(BasePlayer):
     s6 = models.IntegerField(choices=[[1,"Tidak Setuju"],[2,"Cukup Setuju"],[3,"Setuju"],[4,"Sangat Setuju"]], label="6) Seberapa setuju Anda dengan penurunan tarif dari 20% ke 15% di Nusa Makmur?")
     s7 = models.IntegerField(choices=[[1,"Tidak Percaya"],[2,"Cukup Percaya"],[3,"Percaya"],[4,"Sangat Percaya"]], label="7) Seberapa besar kepercayaan Anda terhadap Nusa Makmur terkait dengan perhitungan estimasi prefilled omset yang diterapkan dalam form pelaporan iuran wajib?", blank=True)
     s8 = models.IntegerField(choices=[[1,"Tidak tahu"],[2,"Tidak Perlu"],[3,"Cukup Perlu"],[4,"Perlu"],[5,"Sangat Perlu"]], label="8) Seberapa perlukah penerapan prefilled omset dalam form pelaporan iuran wajib?", blank=True)
-    s9 = models.IntegerField(choices=[[1,"1 s.d. 2 periode"],[2,"3 s.d 5 periode"],[3,"6 s.d 10 periode"],[4,"Lebih dari 10 periode"]], label="9)	Seberapa sering Anda lupa untuk mencatat omset usaha Anda dari game ini?")
+    s9 = models.IntegerField(choices=[[1,"Tidak pernah lupa"],[2,"1 s.d. 2 periode"],[3,"3 s.d 5 periode"],[4,"6 s.d 10 periode"],[5,"Lebih dari 10 periode"]], label="9) Seberapa sering Anda lupa untuk mencatat omset usaha Anda dari game ini?")
     s10 = models.IntegerField(choices=[[1,"Tidak Mengerti"],[2,"Cukup Mengerti"],[3,"Mengerti"],[4,"Sangat Mengerti"]], label="10) Menurut Anda, seberapa mengertikah Anda tentang pajak?")
     s11 = models.IntegerField(choices=[[1,"Tidak Paham"],[2,"Cukup Paham"],[3,"Paham"],[4,"Sangat Paham"]], label="11) Seberapa besar pemahaman Anda terkait penggunaan pajak untuk pembiayaan negara?")
     s12 = models.IntegerField(choices=[[1,"Sudah punya"],[2,"Belum punya"]], label="12) Apakah Anda Sudah memiliki NPWP (Nomor Pokok Wajib Pajak)?")
