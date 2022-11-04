@@ -159,7 +159,7 @@ class Hasil(Page):
         self.participant.vars['prefill_omset'] = prefilled_omset
         self.player.prefill_persen = prefilled_persen
 
-class Laporpajak(Page):
+class Laporan(Page):
     form_model = 'player'
     form_fields = ['omset_input','payoff_awal']
 
@@ -183,7 +183,7 @@ class Laporpajak(Page):
         self.participant.vars['total_payoff_'+ str(self.round_number)] = self.player.payoff_awal
 
 #randomlist 3 dari 0 s.d. 10
-class Periksapajak(Page):
+class Periksa(Page):
     form_model = 'player'
     form_fields = ['total_payoff', 'audit', 'restitusi', 'denda']
 
