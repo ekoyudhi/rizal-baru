@@ -231,5 +231,5 @@ class Tandaterima(Page):
                 'pph':pph}
 
 
-page_sequence = [Notif, Awal, Ambilwaktu, Maingame, Hasil, Laporpajak, Tandaterima, Periksapajak]
+page_sequence = [Notif, Awal, Ambilwaktu, Maingame, Hasil, Laporan, Tandaterima, Periksa]
 #page_sequence = [Awal, Notif, Ambilwaktu, Periksapajak]
