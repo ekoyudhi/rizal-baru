@@ -49,7 +49,7 @@ class Player(BasePlayer):
        
     
 
-    t11 = models.IntegerField(label="1) Umur")
+    t11 = models.IntegerField(label="1) Umur (tahun)")
     t12 = models.IntegerField(choices=[[1,'Laki-laki'],[2,'Perempuan']], label='2) Jenis Kelamin')
     t13 = models.IntegerField(choices=[[1,"Nanggore Aceh Darussalam"],[2,"Sumatera Utara"],[3,"Sumatera Selatan"],[4,"Sumatera Barat"],[5,"Bengkulu"],[6,"Riau"],[7,"Kepulauan Riau"],[8,"Jambi"],[9,"Lampung"],[10,"Bangka Belitung"],[11,"Kalimantan Barat"],[12,"Kalimantan Timur"],[13,"Kalimantan Selatan"],[14,"Kalimantan Tengah"],[15,"Kalimantan Utara"],[16,"Banten"],[17,"DKI Jakarta"],[18,"Jawa Barat"],[19,"Jawa Tengah"],[20,"DI Yogyakarta"],[21,"Jawa Timur"],[22,"Bali"],[23,"Nusa Tenggara Timur"],[24,"Nusa Tenggara Barat"],[25,"Gorontalo"],[26,"Sulawesi Barat"],[27,"Sulawesi Tengah"],[28,"Sulawesi Utara"],[29,"Sulawesi Tenggara"],[30,"Sulawesi Selatan"],[31,"Maluku Utara"],[32,"Maluku"],[33,"Papua Barat"],[34,"Papua"]], label='3) Provinsi Anda berada saat ini')
     t14 = models.IntegerField(choices=[[1,'Diploma 3 (D3)'],[2,'Sarjana (S1/D4)'],[3,'Magister (S2)'],[4,'Doktoral (S3)']], label='4) Tingkat pendidikan yang sedang berlangsung atau sudah diselesaikan')
